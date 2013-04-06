@@ -1,4 +1,4 @@
-/*csslint box-sizing: false, font-sizes: false, important: false,
+/*csslint box-sizing: false, font-sizes: false,
   qualified-headings: false, unique-headings: false*/
 
 /* LAYOUT STYLES */
@@ -107,7 +107,7 @@ a.button {
     height: 80px;
 }
 
-a.button small {
+.button small {
     display: block;
     font-size: 11px;
 }
@@ -424,7 +424,7 @@ dl dd {
         height: auto;
     }
 
-    a.button small {
+    .button small {
         display: inline;
         font-size: 13px;
     }
@@ -432,7 +432,7 @@ dl dd {
     section,
     aside {
         float: none;
-        width: 100% ! important;
+        width: 100%;
     }
 
     aside {
@@ -441,10 +441,6 @@ dl dd {
         margin-top: 20px;
         min-height: 0;
         padding: 20px 0;
-    }
-
-    aside a.button {
-        display: none;
     }
 
     /*section h1:before,
