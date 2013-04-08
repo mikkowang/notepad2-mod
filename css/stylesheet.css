@@ -11,7 +11,6 @@ body {
 
 h1,
 h2,
-h3,
 a.button {
     font-family: "Architects Daughter";
     -webkit-font-smoothing: antialiased;
@@ -367,16 +366,16 @@ dl dd {
         width: 490px;
     }
 
-    /*section h1:before,
+    section h1:before/*,
     section h2:before,
     section h3:before,
     section h4:before,
     section h5:before,
-    section h6:before {
+    section h6:before*/ {
         content: none;
         margin-left: 0;
         padding-right: 0;
-    }*/
+    }
 }
 
 /* All Mobile Sizes (devices and browser) */
@@ -443,16 +442,16 @@ dl dd {
         padding: 20px 0;
     }
 
-    /*section h1:before,
+    section h1:before/*,
     section h2:before,
     section h3:before,
     section h4:before,
     section h5:before,
-    section h6:before {
+    section h6:before*/ {
         content: none;
         margin-left: 0;
         padding-right: 0;
-    }*/
+    }
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
