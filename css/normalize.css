@@ -88,16 +88,6 @@ strong {
 }
 
 /**
- * Correct font family set oddly in Safari 5 and Chrome.
- */
-
-code,
-pre {
-    font-family: monospace, serif;
-    font-size: 1em;
-}
-
-/**
  * Address inconsistent and variable font size in all browsers.
  */
 
