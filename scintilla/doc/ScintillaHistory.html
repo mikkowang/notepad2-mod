@@ -422,6 +422,7 @@
 	<td>John Donoghue</td>
       </tr><tr>
 	<td>kudah</td>
+	<td>Igor Shaula</td>
     </tr>
     </table>
     <p>
@@ -434,9 +435,60 @@
       </li>
     </ul>
     <h3>
-       3.3.1 placeholder
+       <a href="http://prdownloads.sourceforge.net/scintilla/scite332.zip?download">Release 3.3.2</a>
     </h3>
     <ul>
+	<li>
+	Released 11 December 2013.
+	</li>
+	<li>
+	Haskell folder improved.
+	<a href="http://sourceforge.net/p/scintilla/bugs/1459 /">Bug #1459 </a>.
+	</li>
+	<li>
+	PowerShell lexer recognises here strings and doccomment keywords.
+	#region folding added.
+	<a href="http://sourceforge.net/p/scintilla/feature-requests/985/">Feature #985.</a>
+	</li>
+	<li>
+	Add indicator INDIC_COMPOSITIONTHICK, a thick low underline, to mimic an
+	appearance used for Asian language input composition.
+	</li>
+	<li>
+	Fix multi-typing when two carets are located in virtual space on one line so that spaces
+	are preserved.
+	</li>
+	<li>
+	Fixes to input composition on Cocoa and implementation of accented character input through
+	press and hold. Set selection correctly so that changes to pieces of composition text are easier to perform.
+	Restore undo collection after a sequence of composition actions.
+	Composition popups appear near input.
+	</li>
+	<li>
+	Fix crash on Cocoa when view deallocated.
+	<a href="http://sourceforge.net/p/scintilla/bugs/1466/">Bug #1466</a>, 
+	</li>
+	<li>
+	Fix display of DBCS documents on Windows Direct2D/DirectWrite with default character set.
+	</li>
+    </ul>
+    <h3>
+       <a href="http://prdownloads.sourceforge.net/scintilla/scite331.zip?download">Release 3.3.1</a>
+    </h3>
+    <ul>
+	<li>
+	Released 11 April 2013.
+	</li>
+	<li>
+	Autocompletion lists can now appear in priority order or be sorted by Scintilla.
+	<a href="http://sourceforge.net/p/scintilla/feature-requests/981/">Feature #981.</a>
+	</li>
+	<li>
+	Most lexers now lex an extra NUL byte at the end of the
+	document which makes it more likely they will classify keywords at document end correctly.
+	<a href="http://sourceforge.net/p/scintilla/bugs/574/">Bug #574</a>, 
+	<a href="http://sourceforge.net/p/scintilla/bugs/588/">Bug #588.</a>
+	</li>
 	<li>
 	Haskell lexer improved in several ways.
 	<a href="http://sourceforge.net/p/scintilla/bugs/1459/">Bug #1459.</a>
@@ -446,7 +498,28 @@
 	<a href="http://sourceforge.net/p/scintilla/bugs/1414/">Bug #1414.</a>
 	</li>
 	<li>
+	Ruby lexer crash fixed with keyword at start of document.
+	</li>
+	<li>
 	The PLAT_NCURSES platform now called PLAT_CURSES as may work on other implementations.
+	</li>
+	<li>
+	Bug on Cocoa fixed where input composition with multiple selection or virtual space selection
+	could make undo stop working.
+	</li>
+	<li>
+	Direct2D/DirectWrite mode on Windows now displays documents in non-Latin1 8-bit encodings correctly.
+	</li>
+	<li>
+	Character positioning corrected in Direct2D/DirectWrite mode on Windows to avoid text moving and cutting off
+	lower parts of characters.
+	</li>
+	<li>
+	Position of calltip and autocompletion lists fixed on Cocoa.
+	</li>
+	<li>
+	While regular expression search in DBCS text is still not working, matching partial characters is now avoided
+	by moving end of match to end of character.
 	</li>
     </ul>
     <h3>
